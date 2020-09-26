@@ -9,21 +9,17 @@ public:
     {
     }
 
+private:
+    struct{ int width=16,height=9; } aspect;
+
 protected:
     void initializeGL()
     {
-        glClearColor(0,0,0,1);
-        glEnable(GL_DEPTH_TEST);
-        glEnable(GL_LIGHT0);
-        glEnable(GL_LIGHTING);
-        glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
-        glEnable(GL_COLOR_MATERIAL);
+        glClearColor(0, 0, 0, 1);
     }
 
     void paintGL()
     {
-        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
         glColor4f(0, 128, 0, 0);
         glBegin(GL_POLYGON);
             glVertex3d(-2.0, -2.0, 0.0);
@@ -34,7 +30,7 @@ protected:
 
     void resizeGL(int w, int h)
     {
-        glViewport(0,0,w,h);
+        glViewport(0, 0, w, h);
         glMatrixMode(GL_PROJECTION);
         glLoadIdentity();
         gluPerspective(45, (float)w/h, 0.01, 100.0);
