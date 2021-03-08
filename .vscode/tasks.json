@@ -6,7 +6,7 @@
 		{
 			"type": "shell",
 			"label": "build",
-			"command": "clear && ninja",
+			"command": "cd build && clear && ninja",
 			"args": [],
 			"options": {},
 			"problemMatcher": [

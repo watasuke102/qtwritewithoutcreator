@@ -8,7 +8,7 @@
 			"name": "(gdb) 起動",
 			"type": "cppdbg",
 			"request": "launch",
-			"program": "${workspaceFolder}/qt-test",
+			"program": "${workspaceFolder}/build/qt-test",
 			"args": [],
 			"stopAtEntry": false,
 			"cwd": "${workspaceFolder}",

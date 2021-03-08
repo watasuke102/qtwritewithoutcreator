@@ -6,6 +6,7 @@
                 "${workspaceFolder}/inc",
                 "${workspaceFolder}/qt-test_autogen/include",
                 "/usr/include/qt",
+                "/usr/include/qt/QtCore",
                 "/usr/include/qt/QtWidgets"
             ],
             "defines": [],
